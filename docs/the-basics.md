@@ -20,7 +20,7 @@ ssh -R 80:localhost:8080 localhost.run
 import { useState } from 'react'
 
 export const PortChooser = () => {
-  const [port, setPort] = useState(3000);
+  const [port, setPort] = useState(8055);
   return (
     <>
       running on&nbsp;
@@ -31,7 +31,7 @@ export const PortChooser = () => {
       use this command:
       <pre><code parentName="pre" {...{
               "className": "bash"
-            }}>{`ssh -R 80:localhost:${port} localhost.run
+            }}>{`ssh -R 80:localhost:8055 localhost.run
 `}</code></pre>
     </>
   )
